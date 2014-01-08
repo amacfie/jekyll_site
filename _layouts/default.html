@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <title>{% if page.title != site.name %} {{ page.title }} | {% endif %} {{ site.name }}</title>
         <!--<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/stylesheet.css" />-->
 
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -11,18 +11,17 @@
 
     <body>
         <header>
-            <h1><a href="{{site.baseurl}}/">Welcome to {{ site.name }}</a></h1>
-                <h4>{{ site.description }}</h4>
-            <hr />
+            <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
+            <h4>{{ site.description }}</h4>
         </header>
 
         <main>
             <article>
                 <header>
+                    {% if page.title != site.name %}
                     <h2>{{ page.title }}</h2>
-                    <span><i class="icon-clock"></i><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span><br/>
+                    {% endif %}
                     <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
-                    <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
                 </header>
 
                 <div class="entry">{{ content }}</div>
@@ -35,7 +34,9 @@
         </main>
 
         <footer>
-            <a href="{{site.baseurl}}">Table of Contents</a>
+            {% if page.title != site.name %}
+            <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            {% endif %}
         </footer>
 
     </body>

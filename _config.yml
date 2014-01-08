@@ -2,5 +2,5 @@ safe: true
 lsi: false
 pygments: true
 markdown: kramdown
-name: ALI2
-baseurl: /ALI2
+name: Document name
+baseurl: /reponame
