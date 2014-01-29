@@ -14,6 +14,13 @@ function loadGoogle() {
             "site:" + domainroot + " " + $( "#textField" ).val()
         );
     });
+    // remove placeholder text on first focus
+    $("#textField").on( "focus", function() {
+		if ($("#textField").val() == "Search this document"){
+			$("#textField").val(""); 
+		}
+	});
+
 };
 
 $( document ).ready(loadGoogle);
