@@ -7,12 +7,22 @@
         <!--<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/stylesheet.css" />-->
 
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" 
+            src="{{site.baseurl}}/javascripts/google.js"></script>
     </head>
 
     <body>
         <header>
             <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
-            <h4>{{ site.description }}</h4>
+
+            <p>
+                <form action="http://www.google.com/search" method="get" id="google">
+                <input id="hiddenField" name="q" type="hidden" />
+                <input id="textField" name="qfront" type="text" style="width: 180px" /> 
+            </p>
+
+            </form>
         </header>
 
         <main>
@@ -21,7 +31,6 @@
                     {% if page.title != site.name %}
                     <h2>{{ page.title }}</h2>
                     {% endif %}
-                    <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
                 </header>
 
                 <div class="entry">{{ content }}</div>
@@ -34,9 +43,16 @@
         </main>
 
         <footer>
+            <ul id="footmenu">
             {% if page.title != site.name %}
-            <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            <li>
+                <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </li>
             {% endif %}
+            <li>
+                <a href="{{ page.path }}">View source on Github</a>
+            </li>
+            </ul>
         </footer>
 
     </body>
