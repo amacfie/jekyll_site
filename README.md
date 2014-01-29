@@ -1,7 +1,7 @@
 jekyll_site
 ===========
 
-This is a template for  
+This is a template for 
 [Jekyll](http://jekyllrb.com/docs/home/)
 static sites, which you can host for free as GitHub project 
 [Pages](https://help.github.com/categories/20/articles).
