@@ -3,7 +3,7 @@ jekyll_site
 
 This is a template for 
 [Jekyll](http://jekyllrb.com/docs/home/)
-static sites, which you can host for free as GitHub project 
+static websites, which you can host for free as GitHub project 
 [Pages](https://help.github.com/categories/20/articles).
 This template is useful for simple documents:
 a set of pages and a table of contents.
@@ -12,7 +12,7 @@ someone can fork your document and host on their own copy right away without
 reconfiguring.
 
 Simply copy this template into an orphan branch (called `gh-pages`) of a 
-project repo on Github, and the site will get served at 
+project repo on GitHub, and the site will get served at 
 `http://yourgithubusername.github.io/yourreponame`.
 When you push to the branch, the site will be rebuilt.
 In the case of a standalone document with no code branches, the project is empty
