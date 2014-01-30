@@ -5,9 +5,10 @@ This is a template for
 [Jekyll](http://jekyllrb.com/docs/home/)
 static sites, which you can host for free as GitHub project 
 [Pages](https://help.github.com/categories/20/articles).
-This template is useful for simple articles, documents, or book-like websites.
+This template is useful for simple documents:
+a set of pages and a table of contents.
 When used for a Github project page, the repository is completely forkable, i.e.
-someone can fork your document and work on their own copy right away without
+someone can fork your document and host on their own copy right away without
 reconfiguring.
 
 Simply copy this template into an orphan branch (called `gh-pages`) of a 
@@ -32,13 +33,12 @@ Math notation via [MathJax](http://www.mathjax.org/) is supported.
 1. `git remote add origin https://github.com/username/reponame.git`
 1. `git push -u origin gh-pages`
 1. edit `name` and `baseurl` in `_config.yml`
-1. edit the content: the markdown files
-1. replace this `README.md` file
+1. edit the content: the markdown files, including this `README.md` file
 
 To link to `page.md`, create a link to `{{ site.baseurl }}/page.html`.
-This is shown in the included markdown files.
+This practice is shown in the included markdown files.
 
-Use `###`, `####`, etc. for headings. 
+Use `###`, `####`, etc. for headings within markdown files. 
 (The document (site) title is `h1`, and the page title is `h2`.)
 
 Consult the 
