@@ -43,15 +43,19 @@ amet faucibus porta, turpis lacus imperdiet erat, eu suscipit felis tortor id
 est,
 
 $$\begin{equation} \label{eq:fg}
-    f(z) = g(z).
+    f(z) = \href{test.html}{g}(z).
 \end{equation}$$
 
+<div class="test1" markdown="block">
 Nam viverra a Equation $$\ref{eq:fg}$$ enim at aliquet. Maecenas blandit, lacus
 non cursus venenatis, $$f(z)^2$$ arcu orci rhoncus ante, id iaculis est libero
 in sapien.  Pellentesque ac arcu vehicula, iaculis risus non, vestibulum
-lectus. Nulla a lobortis nulla. Morbi nec eros placerat, congue nisi at,
+lectus. Nulla a lobortis nulla. 
+
+Morbi nec eros placerat, congue nisi at,
 fermentum velit. Class aptent taciti sociosqu ad litora torquent per conubia
 nostra, per inceptos himenaeos.
+</div>
 
 #### Sapien rhoncus
 
@@ -64,7 +68,7 @@ luctus. Phasellus quam libero, ultrices nec malesuada a, luctus sit amet ante.
 Ut vulputate dictum cursus. Proin ac sapien rhoncus, fringilla nulla non,
 consequat lacus.  
 
-~~~ ruby
+~~~ 
 for i in 0..5
    if i < 2 then
       next
