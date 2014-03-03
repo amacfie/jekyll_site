@@ -15,11 +15,11 @@ function loadGoogle() {
         );
     });
     // remove placeholder text on first focus
-    $("#textField").on( "focus", function() {
-		if ($("#textField").val() == "Search this document"){
-			$("#textField").val(""); 
-		}
-	});
+    //$("#textField").on( "focus", function() {
+	//	if ($("#textField").val() == "Search this document"){
+	//		$("#textField").val(""); 
+	//	}
+	//});
 
 };
 

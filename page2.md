@@ -14,3 +14,12 @@ egestas venenatis ipsum, et iaculis ante viverra sit amet. Vestibulum vitae
 massa dictum quam bibendum ultrices ac non lectus. 
 
 $$ \sin\left(z^2\right) $$
+
+<div class="theorem" markdown="block">
+Blah
+</div>
+
+<div class="proof qed" markdown="block">
+Obvious.
+</div>
+

@@ -25,6 +25,6 @@ Person1, Person2
 
 ##Table of contents {#maintoc}
 
-* [page1](page1.html) 
-* [page2](page2.html)
+* [page1 name](page1.html) 
+* [page2 name](page2.html)
 
