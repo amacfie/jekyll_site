@@ -31,9 +31,11 @@ Math notation via [MathJax](http://www.mathjax.org/) is supported.
 1. `cp -r jekyll_site-master/. ./`
 1. `rm -rf jekyll_site-master master.zip`
 1. `git remote add origin https://github.com/username/reponame.git`
+1. add and commit
 1. `git push -u origin gh-pages`
 1. edit `name` and `baseurl` in `_config.yml`
 1. edit the content: the markdown files, including this `README.md` file
+1. add, commit, and push, ...
 
 To link to `page.md`, create a link to `{{ site.baseurl }}/page.html`.
 This practice is shown in the included markdown files.

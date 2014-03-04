@@ -1,4 +1,4 @@
-// create the "View source on Github" link by examining the URI
+// create the "View source on GitHub" link by examining the URI
 var parsedURI = parseUri(window.location.href);
 
 var host = parsedURI.host;
