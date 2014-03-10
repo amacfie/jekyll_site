@@ -121,7 +121,8 @@ h1, h2 {
 }
 
 h3, h4 {
-    text-transform: uppercase;
+    text-transform: uppercase; /* uppercase */
+    /*font-variant: small-caps;*/ /* small caps */
     letter-spacing: 1px;
 }
 
@@ -265,6 +266,9 @@ pre code.has-numbering {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    /* margin-top and margin-bottom same as p */
+    margin-bottom: 16px;
+    margin-top: 16px;
     padding: 24px 30px 3px 30px;
     border: 1px solid #f0f0f0;
     border-radius: 4px;
