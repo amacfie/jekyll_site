@@ -261,7 +261,7 @@ pre code.has-numbering {
 
 /* math classes */
 
-.theorem, .lemma, .remark, .corollary {
+.theorem, .lemma, .remark, .corollary, .proposition, .notation, .definition {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -274,8 +274,13 @@ pre code.has-numbering {
     background-repeat: no-repeat;
 }
 
-.theorem strong, .lemma strong, .remark strong, .corollary strong {
+.theorem strong, .lemma strong, .remark strong, .corollary strong, .proposition
+strong, .notation strong, .definition strong {
     font-weight: bold;
+    font-style: normal;
+}
+
+.theorem em, .lemma em, .remark em, .corollary em, .definition em, .proposition em, .notation em {
     font-style: normal;
 }
 
@@ -301,6 +306,10 @@ pre code.has-numbering {
 
 .notation {
     background-image: url('../images/notation.png');
+}
+
+.definition {
+    background-image: url('../images/definition.png');
 }
 
 .proofhead {
