@@ -19,7 +19,7 @@ $$ \sin\left(z^2\right) $$
 Blah
 </div>
 
-<div class="proof qed" markdown="block">
+<div class="proof" markdown="block">
 Obvious.
 </div>
 
