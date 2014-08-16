@@ -7,7 +7,7 @@ static websites, which you can host for free as GitHub project
 [Pages](https://help.github.com/categories/20/articles).
 This template is useful for simple documents:
 a set of pages and a table of contents.
-When used for a Github project page, the repository is completely forkable, i.e.
+When used for a GitHub project page, the repository is completely forkable, i.e.
 someone can fork your document and host on their own copy right away without
 reconfiguring.
 
