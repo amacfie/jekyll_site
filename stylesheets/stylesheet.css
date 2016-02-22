@@ -248,6 +248,10 @@ pre code.has-numbering {
     font-family: 'Monaco', Inconsolata, Courier, monospace;
     font-size: 9pt;
     color: #AAA;
+    list-style: none;
+}
+.pre-numbering li {
+    list-style: none;
 }
 
 /* misc */
